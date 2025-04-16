@@ -50,7 +50,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(/images/Background.jpg) no-repeat;
+    background: url(../images/Background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -211,7 +211,7 @@ section {
 .cards-contact {
     background-color: #091623;
     padding: 60px 200px;
-    background: url(/images/contact.jpg) no-repeat;
+    background: url(../images/contact.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
