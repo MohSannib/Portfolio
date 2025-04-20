@@ -348,3 +348,60 @@ section {
      
     }
 }
+
+@media (max-width: 1023px) {
+    .cards-contact {
+        padding: 60px 20px; 
+    }
+
+    .contact-form {
+        padding: 20px; 
+    }
+
+    .input-group input, .input-group textarea {
+        font-size: 0.9em; 
+    }
+
+    .submit-btn {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 641px) {
+    .cards-contact {
+        padding: 40px 10px; 
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .input-group input, .input-group textarea {
+        font-size: 0.85em;
+    }
+
+    .submit-btn {
+        font-size: 0.9em; 
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 300px) {
+    .cards-contact {
+        padding: 30px 10px; 
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .input-group input, .input-group textarea {
+        font-size: 0.8em; 
+    }
+
+    .submit-btn {
+        font-size: 0.8em;
+        padding: 8px 18px;
+    }
+}
