@@ -1,141 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamad Sannib | Software Developer</title>
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <title>MOhamad Sannib</title>
 </head>
+
 <body>
-    <header>
-        <a href="#" class="logo">Mohamad Sannib</a>
-        <nav class="navigation">
-            <a href="#Services">Services</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Contact">Contact</a>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <a href="#" class="logo">Mohamad<span>.</span></a>
+
+        <div class="nav-right">
+            <div class="lang-switcher">
+                <select id="langSelect" class="lang-select">
+                    <option value="en">EN</option>
+                    <option value="de">DE</option>
+                    <option value="ar">عربي</option>
+                </select>
+            </div>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <nav class="navigation" id="navigation">
+            <a href="#Hero" class="nav-link" data-i18n="nav_home">Home</a>
+            <a href="#Services" class="nav-link" data-i18n="nav_services">Services</a>
+            <a href="#Projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+            <a href="#Contact" class="nav-link" data-i18n="nav_contact">Contact</a>
         </nav>
     </header>
 
-    <section class="main">
-        <div class="main-text">
-            <h2>Hello, I'm Mohamad<br><span>Software developer</span></h2>
-            <h3>I know how to code in C#.<br>As a web developer I'm good with<br>HTML5,JavaScript,CSS3 and Bootstrap.</h3>
-            <a href="#Projects" class="main-btn">View my work</a>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mohamad-sannib-55b857b6/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.xing.com/profile/Mohamad_Sannib/web_profiles"><i class="fa-brands fa-square-xing"></i></a>
-
+    <!-- Hero Section -->
+    <section class="hero reveal" id="Hero">
+        <div class="hero-content">
+            <div class="hero-text glass-panel">
+                <span class="greeting" data-i18n="hero_greeting">Hello, I'm</span>
+                <h1>Mohamad Sannib</h1>
+                <h2 class="role" data-i18n="hero_role">Software Developer</h2>
+                <p data-i18n="hero_desc">I know how to code in <strong>C#</strong>. As a web developer, I'm highly
+                    proficient with <strong>HTML5, JavaScript, CSS3,</strong> and <strong>Bootstrap</strong>. I build
+                    scalable, modern solutions.</p>
+                <div class="hero-actions">
+                    <a href="#Projects" class="btn primary-btn"><span data-i18n="hero_btn">View My Work</span> <i
+                            class="fas fa-arrow-right icon-dir"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mohamad-sannib-55b857b6/" target="_blank"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.xing.com/profile/Mohamad_Sannib/web_profiles" target="_blank"
+                        aria-label="Xing"><i class="fa-brands fa-square-xing"></i></a>
+                </div>
             </div>
         </div>
-
     </section>
 
-    <section class="cards" id="Services">
-        <h2 class="title">Services</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
+    <!-- Services Section -->
+    <section class="services reveal" id="Services">
+        <div class="section-header">
+            <h2 class="title" data-i18n="services_title">My <span>Services</span></h2>
+            <p class="subtitle" data-i18n="services_subtitle">What I can do for you</p>
+        </div>
+        <div class="services-content">
+            <div class="service-card glass-panel">
+                <div class="icon-wrapper">
                     <i class="fas fa-laptop-code"></i>
                 </div>
-                <div class="info">
-                    <h3>Web Development</h3>
-                    <p>I build responsive websites and custom web applications using <strong>ASP.NET Core</strong>, ensuring great user experience and scalable solutions.</p>
-                </div>
-            </div> 
-            <div class="card">
-                <div class="icon">
+                <h3 data-i18n="srv1_title">Web Development</h3>
+                <p data-i18n="srv1_desc">I build responsive websites and custom web applications using <strong>ASP.NET
+                        Core</strong>, ensuring a great user experience and scalable solutions.</p>
+            </div>
+            <div class="service-card glass-panel">
+                <div class="icon-wrapper">
                     <i class="fas fa-database"></i>
                 </div>
-                <div class="info">
-                    <h3>Database Integration</h3>
-                    <p>I design and integrate robust databases with <strong>SQL Server</strong> to ensure efficient data management and high performance in <strong>C# applications.</strong> </p>
-                </div>
+                <h3 data-i18n="srv2_title">Database Integration</h3>
+                <p data-i18n="srv2_desc">I design and integrate robust databases with <strong>SQL Server</strong> to
+                    ensure efficient data management and high performance in <strong>C# applications.</strong></p>
             </div>
-            <div class="card">
-                <div class="icon">
+            <div class="service-card glass-panel">
+                <div class="icon-wrapper">
                     <i class="fas fa-pen-alt"></i>
                 </div>
-                <div class="info">
-                    <h3>Content Creation</h3>
-                    <p>I create engaging and high-quality content for websites, blogs, and social media to effectively connect with audiences and deliver value.</p>
-                </div>
-            </div>          
+                <h3 data-i18n="srv3_title">Content Creation</h3>
+                <p data-i18n="srv3_desc">I create engaging and high-quality content for websites, blogs, and social
+                    media to effectively connect with audiences and deliver value.</p>
+            </div>
         </div>
     </section>
 
-    <section class="Projects" id="Projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="Project-card">
-                <div class="Project-image">
-                    <img src="images/MyShop.jpg" />
+    <!-- Projects Section -->
+    <section class="projects reveal" id="Projects">
+        <div class="section-header">
+            <h2 class="title" data-i18n="projects_title">Featured <span>Projects</span></h2>
+            <p class="subtitle" data-i18n="projects_subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-content">
+            <div class="project-card glass-panel">
+                <div class="project-image">
+                    <img src="images/MyShop.jpg" alt="My Shop Project" />
+                    <div class="overlay">
+                        <a href="https://github.com/MohSannib/MyShop.git" target="_blank" class="preview-btn"><i
+                                class="fab fa-github"></i> <span data-i18n="proj_code_btn">Code</span></a>
+                    </div>
                 </div>
-                <div class="Project-info">
-                    <p class="Project-category">An advanced e-commerce platform for seamless online shopping.</p>
-                    <strong class="Project-title">
-                        <span>My Shop</span>
-                        <a href="https://github.com/MohSannib/MyShop.git" class="more-details">More details</a>
-                    </strong>
+                <div class="project-info">
+                    <span class="project-category" data-i18n="proj1_cat">E-Commerce Platform</span>
+                    <h3 class="project-title">My Shop</h3>
+                    <p class="project-desc" data-i18n="proj1_desc">An advanced e-commerce platform for seamless online
+                        shopping. Features responsive design, shopping cart, and product management.</p>
+                    <a href="https://github.com/MohSannib/MyShop.git" target="_blank" class="more-details"><span
+                            data-i18n="proj_more">More details</span> <i class="fas fa-chevron-right icon-dir"></i></a>
                 </div>
             </div>
-            <div class="Project-card">
-    <div class="Project-image">
-        <img src="images/meine-mensa.jpg" />
-    </div>
 
-    <div class="Project-info">
-        <p class="Project-category">
-            A school catering management system developed with ASP.NET Core MVC 
-            for managing meals, orders, and administration efficiently.
-        </p>
-
-        <strong class="Project-title">
-            <span>Meine Mensa</span>
-
-            <a href="https://github.com/MohSannib/Meine-Mensa" 
-               class="more-details" 
-               target="_blank">
-               More details
-            </a>
-        </strong>
-        </div>
-        </div>
+            <div class="project-card glass-panel">
+                <div class="project-image">
+                    <img src="images/meine-mensa.jpg" alt="Meine Mensa Project" />
+                    <div class="overlay">
+                        <a href="https://github.com/MohSannib/Meine-Mensa" target="_blank" class="preview-btn"><i
+                                class="fab fa-github"></i> <span data-i18n="proj_code_btn">Code</span></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category" data-i18n="proj2_cat">ASP.NET Core MVC</span>
+                    <h3 class="project-title">Meine Mensa</h3>
+                    <p class="project-desc" data-i18n="proj2_desc">A school catering management system developed for
+                        managing meals, orders, and administration efficiently.</p>
+                    <a href="https://github.com/MohSannib/Meine-Mensa" target="_blank" class="more-details"><span
+                            data-i18n="proj_more">More details</span> <i class="fas fa-chevron-right icon-dir"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="cards-contact" id="Contact">
-        <h2 class="title">Contact</h2>
-
-        <form action="https://formspree.io/f/mblgeyyg" method="POST" class="contact-form">
-            <div class="input-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="What's your name?" required>
+    <!-- Contact Section -->
+    <section class="contact reveal" id="Contact">
+        <div class="section-header">
+            <h2 class="title" data-i18n="contact_title">Get In <span>Touch</span></h2>
+            <p class="subtitle" data-i18n="contact_subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container glass-panel">
+                <form action="https://formspree.io/f/mblgeyyg" method="POST" class="contact-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name" data-i18n="lbl_name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email" data-i18n="lbl_email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" placeholder=" " required></textarea>
+                        <label for="message" data-i18n="lbl_message">Your Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span data-i18n="btn_send">Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
-    
-            <div class="input-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="What's your email?" required>
-            </div>
-    
-            <div class="input-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" placeholder="What do you want to say?" required></textarea>
-            </div>
-    
-            <button type="submit" class="submit-btn">Send</button>
-        </form>
-
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-        <p class="footer-title">Copyrights @ <span>Mohamad Sannib</span></p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/mohamad-sannib-55b857b6/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.xing.com/profile/Mohamad_Sannib/web_profiles"><i class="fa-brands fa-square-xing"></i></a>
+        <div class="footer-content">
+            <p class="footer-title">
+                Copyright &copy;
+                <span class="year">0000</span>
+                <span class="footer-name">Mohamad Sannib</span>.
+                <span data-i18n="footer_rights">All Rights Reserved.</span>
+            </p>
 
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohamad-sannib-55b857b6/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.xing.com/profile/Mohamad_Sannib/web_profiles" target="_blank" aria-label="Xing">
+                    <i class="fa-brands fa-square-xing"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
+    <!-- Scroll to top button -->
+    <a href="#Hero" class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
